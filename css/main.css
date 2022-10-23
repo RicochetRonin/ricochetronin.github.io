@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Short+Stack&display=swap');
 
 :root{
     --primary-color: #a189da;
@@ -14,7 +14,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Short Stack', cursive;
     color: var(--font-secondary-color);
 }
 
@@ -23,6 +23,10 @@ body{
     margin: 0;
     background-color: var(--primary-color);
     color: var(--font-secondary-color);
+}
+
+body h2{
+    font-family: 'Kaushan Script', cursive;
 }
 
 .header{
