@@ -29,6 +29,10 @@ body h2{
     font-family: 'Kaushan Script', cursive;
 }
 
+body h1{
+    font-family: 'Kaushan Script', cursive;
+}
+
 .header{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     background-color: var(--primary-very-dark);
