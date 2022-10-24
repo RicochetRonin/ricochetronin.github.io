@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Short+Stack&display=swap');
 
 :root{
-    --primary-color: #a189da;
-    --primary-dark: #594685;
-    --primary-very-dark: #1e1159;
-    --secondary-color: #c0507d;
-    --tertiary-color: #efe996;
-    --font-primary-color: #060505;
+    --primary-color: #d8d9e3;
+    --primary-dark: #6a6ba8;
+    --primary-very-dark: #372950;
+    --secondary-color: #583c53;
+    --tertiary-color: #191826;
+    --font-primary-color: #060506;
     --font-secondary-color: #ffffff;
 }
 
@@ -21,7 +21,7 @@
 
 body{
     margin: 0;
-    background-color: var(--primary-color);
+    background-color: var(--primary-dark);
     color: var(--font-secondary-color);
 }
 
@@ -31,7 +31,7 @@ body h2{
 
 .header{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-    background-color: var(--primary-dark);
+    background-color: var(--primary-very-dark);
     width: 100%;
     height: 7.5%;
     padding: 0px 5px;
@@ -100,7 +100,7 @@ body h2{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 
     box-shadow: 0px, 0px, 5px, 0px, rgba(0, 0, 0, 0.2);
-    background-color: var(--primary-dark);
+    background-color: var(--secondary-color);
     padding: 10px 2px;
     margin: 0;
     text-align: center;
@@ -131,7 +131,7 @@ body h2{
     justify-content: center;
     text-align: center;
 
-    background-color: var(--primary-very-dark);
+    background-color: var(--secondary-color);
 
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
@@ -146,7 +146,7 @@ body h2{
 }
 
 .plaque{
-    background-color: var(--primary-dark);
+    background-color: var(--primary-very-dark);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     padding: 10px 0px;
     width: 11em;
@@ -211,7 +211,7 @@ body h2{
     flex-grow: 1;
     margin: 50px 20px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-    background-color: var(--primary-dark);
+    background-color: var(--primary-very-dark);
 }
 
 .blogcontent .card img {
