@@ -92,12 +92,16 @@ body h1{
   }
 
 .content{
-    background-color: var(--primary-color);
+    background-color: var(--primary-dark);
     padding: 0;
 }
 
 .content p{
     margin: 0;
+}
+
+.ronin-cling{
+    right: 0px;
 }
 
 .pitch{
@@ -109,6 +113,36 @@ body h1{
     margin: 0;
     text-align: center;
     position: sticky; bottom: 100px;
+}
+
+.summary{
+    text-align: justify;
+    padding: 1em 30%;
+}
+
+.img-w-summary{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 0 0 4em 0;
+}
+
+.img-w-summary h1{
+    text-align: center;
+    padding: 0.25em 0;
+}
+
+.img-w-summary p{
+    padding: 0 2em;
+}
+
+.img-w-summary img{
+    width: 200px;
+}
+
+.horiz-block{
+    display: flex;
+    flex-direction: column;
 }
 
 
