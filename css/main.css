@@ -57,10 +57,6 @@ body h1{
     text-decoration: none;
 }
 
-.preview{
-    padding-bottom: 55%;
-}
-
 .preview video{
     width: 100%;
     position: fixed;
@@ -69,7 +65,7 @@ body h1{
 }
 
 .top{
-    padding-top: 5%;
+    padding-top: 4.4%;
 }
 
 .back-button {
@@ -92,8 +88,9 @@ body h1{
   }
 
 .content{
-    background-color: var(--primary-dark);
+    background-color: var(--primary-very-dark);
     padding: 0;
+    margin-top: 42%;
 }
 
 .content p{
@@ -105,19 +102,21 @@ body h1{
 }
 
 .pitch{
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-
     box-shadow: 0px, 0px, 5px, 0px, rgba(0, 0, 0, 0.2);
-    background-color: var(--secondary-color);
+    background-color: var(--primary-dark);
     padding: 10px 2px;
     margin: 0;
     text-align: center;
-    position: sticky; bottom: 100px;
 }
 
 .summary{
     text-align: justify;
-    padding: 1em 20%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40em;
+    background-color: var(--primary-very-dark);
 }
 
 .img-w-summary{
