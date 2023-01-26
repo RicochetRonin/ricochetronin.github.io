@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Short+Stack&display=swap');
 
 :root{
-    --primary-color: #d8d9e3;
-    --primary-dark: #6a6ba8;
-    --primary-very-dark: #372950;
-    --secondary-color: #583c53;
-    --tertiary-color: #191826;
-    --font-primary-color: #060506;
-    --font-secondary-color: #ffffff;
+    --primary-color: #413342;
+    --primary-dark: #242424;
+    --primary-light: #6e586b;
+    --secondary-color: #9b3529;
+    --secondary-light: #b83d33;
+    --tertiary-color: #f59941;
+    --font-primary-color: #ffffff;
+    --font-secondary-color: #060506;
 }
 
 * {
@@ -15,14 +16,13 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Short Stack', cursive;
-    color: var(--font-secondary-color);
+    color: var(--font-primary-color);
 }
 
 
 body{
     margin: 0;
-    background-color: var(--primary-dark);
-    color: var(--font-secondary-color);
+    background-color: var(--primary-color);
 }
 
 body h2{
@@ -35,9 +35,9 @@ body h1{
 
 .header{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-    background-color: var(--primary-very-dark);
+    background-color: var(--primary-color);
     width: 100%;
-    height: 7.5%;
+    height: 5%;
     padding: 0px 5px;
     position: fixed;
     top: 0;
@@ -48,6 +48,17 @@ body h1{
 
 .header a{
     text-decoration: none;
+}
+
+.logo{
+    display: inline-block;
+    width: 15em;
+}
+
+.logo img{
+    float:  left;
+    margin: 0 5px 0 0;
+    height: 36px;
 }
 
 .nav a{
@@ -65,32 +76,36 @@ body h1{
 }
 
 .top{
-    padding-top: 4.4%;
+    padding-top: 5%;
 }
 
-.back-button {
-    background-color: var(--primary-very-dark);
-    margin: 5% 0;
-    font-size: 18px;
-    padding: 2px 15px;
-    border-radius: 6px;
-    margin-left: 1%;
-    transition-duration: 0.3s;
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14% 0;
+    margin: auto;
+    max-width: 40%;
 }
 
-.back-button:hover {
-    background-color: black;
-    color: white;
+.title h1{
+    text-align: center;
+    font-size: 60px;
+    line-height: 55px;
+    margin: 0.5em 0;
 }
 
-.back-button:active {
-    transform: translateY(4px);
-  }
+.title a{
+    background-color: var(--secondary-light);
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5em;
+    width: 10em;
+}
 
 .content{
-    background-color: var(--primary-very-dark);
-    padding: 0;
-    margin-top: 42%;
+    background-color: var(--primary-color);
+    padding-top: 1em;
 }
 
 .content p{
@@ -103,7 +118,7 @@ body h1{
 
 .pitch{
     box-shadow: 0px, 0px, 5px, 0px, rgba(0, 0, 0, 0.2);
-    background-color: var(--primary-dark);
+    background-color: var(--secondary-light);
     padding: 10px 2px;
     margin: 0;
     text-align: center;
@@ -115,8 +130,8 @@ body h1{
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 40em;
-    background-color: var(--primary-very-dark);
+    max-width: 40em;
+    background-color: var(--primary-color);
 }
 
 .img-w-summary{
@@ -158,35 +173,33 @@ body h1{
 }
 
 .membercard{
-    width: 10em;
-    height: 10em;
+    display: flex;
     
-    margin: 30px 20px;
+    height: 10em;
+
+    margin: 10px 20px;
     padding: 20px;
 
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 
-    background-color: var(--secondary-color);
+    background-color: var(--primary-light);
 
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-.membercard a{
-    text-decoration: none;
-}
-
 .membercard img{
-    z-index: -1;
     border-radius: 50%;
 }
 
 .plaque{
-    background-color: var(--primary-very-dark);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-    padding: 10px 0px;
+    padding: 10px 20px;
     width: 12em;
+}
+
+.membercard p{
+    font-size: 14px;
 }
 
 #game-link-container {
@@ -200,87 +213,13 @@ body h1{
     padding-left: 10px;
 }
 
-/*
-#
-#
-# Blog Stuff
-#
-#
-*/
-
-.container {
-    width: 100%;
-}
-
-.container .row {
-    width: 80%;
-    margin: auto;
-}
-
-.container .row .blogheader {
-    width: 60%;
-    text-align: center;
-    margin: auto;
-}
-
-.container .row .blogheader h1 {
-    padding-top: 30px;
-    font-size: 45px;
-    color: var(--font-secondary-color);
-}
-
-.container .row .blogheader p {
-    margin-top: 15px;
-    font-size: 18px;
-    line-height: 1.5;
-    color: var(--font-secondary-color);
-}
-
-.blogcontent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    flex-wrap: wrap;
-}
-
-.blogcontent .card {
-    flex-grow: 1;
-    margin: 50px 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-    background-color: var(--primary-very-dark);
-}
-
-.blogcontent .card img {
-    width: 500px;
-    height: auto;
-    margin: 10px;
-}
-
-.blogcontent .card h2 {
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.blogcontent .card h4 {
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 18px;
-}
-
-.blogcontent .card p {
-    font-size: 15px;
-    color: var(--font-secondary-color);
-    line-height: 1.5;
-    padding: 10px;
-}
-
 @media screen and (max-width: 768px) {
-    .teamlist{
-        flex-direction: column;
+    .preview video{
+        width: 200%;
+        left: -50%;
     }
     
-    .blogcontent{
+    .teamlist{
         flex-direction: column;
     }
 }
